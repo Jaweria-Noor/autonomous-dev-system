@@ -1,69 +1,87 @@
-# Autonomous Development System
-
-An AI-powered autonomous software development platform that integrates project management, task execution, code generation, testing, and deployment workflows into a unified system.
+# Autonomous Healing Loop - MCP Powered AI Development System
 
 ## Overview
 
-Autonomous Development System is designed to streamline the software development lifecycle by leveraging AI agents, automation tools, and project management integrations. The platform can analyze requirements, generate implementation plans, create code, execute tasks, perform testing, and track progress through external services such as Jira.
+Autonomous Healing Loop is an AI-powered software development platform built on the **Model Context Protocol (MCP)**. The system enables AI agents to generate code, execute automated tests, analyze failures, perform self-healing, and create Jira issues through dedicated MCP servers.
 
-## Features
+The platform combines **Gemini AI**, **MCP**, **Playwright**, and **Jira** to create an autonomous development workflow that can identify issues, attempt fixes, validate solutions, and escalate unresolved problems automatically.
 
-### Project Management Integration
+---
 
-* Jira integration for issue tracking and task management
-* Automated task synchronization
-* Project progress monitoring
-* Sprint and workflow support
+## Key Features
 
-### AI-Powered Development
+### MCP-Based Tool Architecture
 
-* Requirement analysis
-* Implementation planning
-* Code generation assistance
-* Automated task execution
-* Development workflow orchestration
+* Built using the official Model Context Protocol (MCP) SDK
+* Dedicated Jira MCP Server
+* Dedicated Playwright MCP Server
+* Structured tool discovery and invocation
+* RPC-based communication using STDIO transport
 
-### Testing & Quality Assurance
+### AI-Powered Code Generation
 
-* Automated testing support
-* Validation workflows
-* Error detection and reporting
-* Quality assurance automation
+* Generates application code from task descriptions
+* Supports iterative development workflows
+* AI-driven implementation planning
 
-### Frontend
+### Automated Testing
 
-* Modern web-based user interface
-* Real-time project monitoring
-* Task management dashboard
-* Interactive development controls
+* Executes Playwright test suites
+* Runs UI validation automatically
+* Captures test results and execution logs
 
-### Backend
+### Autonomous Self-Healing
 
-* RESTful API architecture
-* AI service integrations
-* Workflow management
-* Database connectivity
-* Secure environment-based configuration
+* Detects test failures
+* Collects debugging context
+* Captures screenshots and diagnostics
+* Generates fixes using Gemini AI
+* Applies fixes and re-runs validation tests
 
-## Technology Stack
+### Jira Integration
 
-### Frontend
+* Creates bugs automatically for unresolved issues
+* Supports Epic, Story, and Bug creation
+* Tracks development and testing failures
 
-* React
-* JavaScript
-* Modern UI Components
+### Monitoring Dashboard
 
-### Backend
+* React-based frontend
+* Real-time workflow visibility
+* Task execution monitoring
+* Development lifecycle tracking
 
-* Node.js
-* Express.js
-* MongoDB
+---
 
-### Integrations
+## Architecture
 
-* Jira API
-* AI Model Providers
-* Playwright Automation
+```text
++-------------------------+
+|      Gemini AI Agent    |
++------------+------------+
+             |
+             | MCP RPC
+             v
++-------------------------+
+|       MCP Client        |
++------------+------------+
+             |
+    +--------+--------+
+    |                 |
+    v                 v
+
++----------------+   +----------------------+
+| Jira MCP Server|   | Playwright MCP Server|
++-------+--------+   +----------+-----------+
+        |                       |
+        v                       v
+
++---------------+    +----------------------+
+| Jira Platform |    | Playwright Test Suite|
++---------------+    +----------------------+
+```
+
+---
 
 ## Project Structure
 
@@ -71,36 +89,126 @@ Autonomous Development System is designed to streamline the software development
 autonomous-dev-system/
 │
 ├── backend/
-│   ├── routes/
-│   ├── services/
 │   ├── mcp/
-│   ├── providers/
+│   │   ├── jira-server.js
+│   │   └── playwright-server.js
+│   │
+│   ├── services/
+│   ├── routes/
+│   ├── runner.js
 │   └── server.js
 │
 ├── frontend/
 │   ├── src/
-│   ├── public/
-│   └── package.json
+│   └── public/
+│
+├── generated-code/
+├── playwright-tests/
+├── screenshots/
+├── logs/
+├── data/
+├── scripts/
 │
 ├── .env
 ├── package.json
 └── README.md
 ```
 
-## Installation
+---
 
-### Prerequisites
+## Technology Stack
 
-* Node.js (v18 or later)
-* npm
+### Backend
+
+* Node.js
+* Express.js
+* JavaScript
+
+### Frontend
+
+* React
+* Vite
+
+### AI & Automation
+
+* Gemini AI
+* Playwright
+
+### MCP Infrastructure
+
+* Model Context Protocol (MCP)
+* @modelcontextprotocol/sdk
+* MCP Server Architecture
+* STDIO Transport
+
+### Integrations
+
+* Jira
 * MongoDB
-* Jira Account (optional)
-* AI Provider API Key
+
+---
+
+## MCP Servers
+
+### Jira MCP Server
+
+Exposes the following MCP tools:
+
+* `create_epic`
+* `create_story`
+* `create_bug`
+
+Responsible for:
+
+* Issue creation
+* Project tracking
+* Workflow management
+
+### Playwright MCP Server
+
+Exposes the following MCP tools:
+
+* `run_test`
+* `take_screenshot`
+* `get_test_results`
+* `get_trace`
+
+Responsible for:
+
+* Test execution
+* Diagnostics collection
+* Failure analysis
+* Screenshot generation
+
+---
+
+## Self-Healing Workflow
+
+1. User submits a development task.
+2. Gemini AI generates code.
+3. Playwright MCP Server executes tests.
+4. If a test fails:
+
+   * Logs are collected
+   * Screenshots are captured
+   * Diagnostics are generated
+5. Gemini AI analyzes the failure.
+6. AI generates a fix.
+7. The fix is applied automatically.
+8. Tests are re-executed.
+9. If the issue persists:
+
+   * Jira MCP Server creates a bug ticket.
+10. Final artifacts are prepared for deployment.
+
+---
+
+## Installation
 
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/autonomous-dev-system.git
+git clone https://github.com/YOUR_USERNAME/autonomous-dev-system.git
 cd autonomous-dev-system
 ```
 
@@ -108,24 +216,24 @@ cd autonomous-dev-system
 
 ```bash
 npm install
-cd backend && npm install
-cd ../frontend && npm install
 ```
 
 ### Configure Environment Variables
 
-Create a `.env` file in the project root:
+Create a `.env` file:
 
 ```env
+GEMINI_API_KEY=your_api_key
 MONGODB_URI=your_mongodb_connection_string
+
 JIRA_BASE_URL=your_jira_url
-JIRA_EMAIL=your_jira_email
-JIRA_API_TOKEN=your_jira_token
-OPENROUTER_API_KEY=your_api_key
-PORT=5000
+JIRA_EMAIL=your_email
+JIRA_API_TOKEN=your_token
 ```
 
-## Running the Application
+---
+
+## Running the Project
 
 ### Development Mode
 
@@ -133,53 +241,33 @@ PORT=5000
 npm run dev
 ```
 
-### Backend Only
+This starts:
 
-```bash
-npm run start --prefix backend
-```
+* Backend Server
+* MCP Servers
+* Frontend Dashboard
 
-### Frontend Only
-
-```bash
-npm run dev --prefix frontend
-```
-
-## Workflow
-
-1. Connect project management tools.
-2. Define project requirements.
-3. Generate implementation plans.
-4. Execute development tasks.
-5. Run automated tests.
-6. Track progress through the dashboard.
-7. Deploy completed solutions.
-
-## Security
-
-* Store all credentials in environment variables.
-* Never commit `.env` files to source control.
-* Use secure API keys and tokens.
-* Restrict access to production resources.
+---
 
 ## Future Enhancements
 
-* Multi-agent collaboration
-* CI/CD integration
-* Advanced code review automation
-* Cloud deployment support
-* Enhanced analytics and reporting
-* Multi-project management
+* Multi-Agent Collaboration
+* GitHub MCP Server Integration
+* CI/CD Automation
+* Advanced Code Review Agents
+* Cloud Deployment Pipelines
+* Additional MCP Tool Servers
 
-## Contributing
-
-Contributions are welcome. Please create a feature branch, commit your changes, and submit a pull request.
+---
 
 ## License
 
-This project is licensed under the MIT License.
+MIT License
+
+---
 
 ## Author
 
-Developed as an Autonomous Software Development Platform focused on AI-driven project execution and workflow automation.
+Jaweria Noor
 
+Built as an experimental MCP-powered autonomous software development platform demonstrating AI agents, self-healing workflows, automated testing, and tool orchestration through the Model Context Protocol.

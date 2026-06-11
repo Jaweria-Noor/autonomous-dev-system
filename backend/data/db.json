@@ -1,107 +1,220 @@
 {
   "tasks": [
     {
-      "id": "1781085491704",
-      "title": "Create a simple counter button",
-      "description": "A button that increments a counter on click",
-      "priority": "Medium",
-      "category": "Development",
+      "id": "1781158934227",
+      "title": "Create responsive login page with validation",
+      "description": "Create a sleek dark-themed login form. It must contain email validation (checking for '@' and standard domains) and password length verification (minimum 6 characters). Error text elements should have IDs '#emailError' and '#passwordError' respectively.",
+      "priority": "High",
+      "category": "Auth",
       "status": "Failed",
-      "createdAt": "2026-06-10T09:58:11.704Z",
-      "_id": "1781085491704",
+      "createdAt": "2026-06-11T06:22:14.227Z",
+      "_id": "1781158934227",
       "logs": [
         {
-          "timestamp": "14:58:11",
-          "message": "Initializing Autonomous Pipeline for Task: \"Create a simple counter button\"",
+          "timestamp": "11:22:14",
+          "message": "Initializing Autonomous Pipeline for Task: \"Create responsive login page with validation\"",
           "type": "info"
         },
         {
-          "timestamp": "14:58:11",
+          "timestamp": "11:22:14",
           "message": "Generating Requirements Document via AI Engine...",
           "type": "info"
         },
         {
-          "timestamp": "14:58:29",
+          "timestamp": "11:22:22",
           "message": "Generating Architecture Plan...",
           "type": "info"
         },
         {
-          "timestamp": "14:58:57",
+          "timestamp": "11:22:57",
           "message": "Creating Epics and Stories via Jira MCP Server...",
           "type": "info"
         },
         {
-          "timestamp": "14:59:01",
+          "timestamp": "11:23:04",
           "message": "Reusing cached Jira Epic: 10080",
           "type": "info"
         },
         {
-          "timestamp": "14:59:04",
-          "message": "Successfully created Jira Story: 10125",
+          "timestamp": "11:23:10",
+          "message": "Successfully created Jira Story: 10162",
           "type": "success"
         },
         {
-          "timestamp": "14:59:06",
-          "message": "Successfully created Jira Story: 10126",
+          "timestamp": "11:23:11",
+          "message": "Successfully created Jira Story: 10163",
           "type": "success"
         },
         {
-          "timestamp": "14:59:08",
-          "message": "Successfully created Jira Story: 10127",
+          "timestamp": "11:23:13",
+          "message": "Successfully created Jira Story: 10164",
           "type": "success"
         },
         {
-          "timestamp": "14:59:09",
-          "message": "Successfully created Jira Story: 10128",
+          "timestamp": "11:23:15",
+          "message": "Successfully created Jira Story: 10165",
           "type": "success"
         },
         {
-          "timestamp": "14:59:09",
+          "timestamp": "11:23:15",
           "message": "Requesting AI code generation...",
           "type": "info"
         },
         {
-          "timestamp": "15:00:01",
+          "timestamp": "11:24:10",
+          "message": "Fatal Pipeline Error: Failed to parse Code JSON from Gemini: Bad escaped character in JSON at position 6237 (line 2 column 6236)",
+          "type": "error"
+        }
+      ]
+    },
+    {
+      "id": "1781159701864",
+      "title": "Create interactive Todo application",
+      "description": "Create a Todo checklist page. Users can type tasks into input '#todoInput' and click button '#addBtn' to append items to list '#todoList'. Ensure adding an item clears the input box.",
+      "priority": "Medium",
+      "category": "Interactive",
+      "status": "Failed",
+      "createdAt": "2026-06-11T06:35:01.864Z",
+      "_id": "1781159701864",
+      "logs": [
+        {
+          "timestamp": "11:35:01",
+          "message": "Initializing Autonomous Pipeline for Task: \"Create interactive Todo application\"",
+          "type": "info"
+        },
+        {
+          "timestamp": "11:35:01",
+          "message": "Generating Requirements Document via AI Engine...",
+          "type": "info"
+        },
+        {
+          "timestamp": "11:35:05",
+          "message": "Generating Architecture Plan...",
+          "type": "info"
+        },
+        {
+          "timestamp": "11:35:51",
+          "message": "Creating Epics and Stories via Jira MCP Server...",
+          "type": "info"
+        },
+        {
+          "timestamp": "11:35:55",
+          "message": "Reusing cached Jira Epic: 10080",
+          "type": "info"
+        },
+        {
+          "timestamp": "11:36:39",
+          "message": "Successfully created Jira Story: 10166",
+          "type": "success"
+        },
+        {
+          "timestamp": "11:36:52",
+          "message": "Successfully created Jira Story: 10167",
+          "type": "success"
+        },
+        {
+          "timestamp": "11:37:04",
+          "message": "Successfully created Jira Story: 10168",
+          "type": "success"
+        },
+        {
+          "timestamp": "11:37:12",
+          "message": "Successfully created Jira Story: 10169",
+          "type": "success"
+        },
+        {
+          "timestamp": "11:37:16",
+          "message": "Successfully created Jira Story: 10170",
+          "type": "success"
+        },
+        {
+          "timestamp": "11:37:16",
+          "message": "Requesting AI code generation...",
+          "type": "info"
+        },
+        {
+          "timestamp": "11:37:59",
           "message": "Generated files: index.html, server.js, test.spec.js",
           "type": "success"
         },
         {
-          "timestamp": "15:00:01",
+          "timestamp": "11:37:59",
           "message": "Dispatching tests to Playwright MCP Server...",
           "type": "info"
         },
         {
-          "timestamp": "15:00:19",
-          "message": "Test failed. Capturing screenshots and traces via MCP...",
-          "type": "error"
-        },
-        {
-          "timestamp": "15:00:21",
-          "message": "Created Jira Bug: 10129 for investigation",
+          "timestamp": "11:38:36",
+          "message": "Captured failure screenshot: /screenshots/task-1781159701864.png",
           "type": "warning"
         },
         {
-          "timestamp": "15:00:21",
+          "timestamp": "11:38:37",
+          "message": "Created Jira Bug: 10171 for investigation",
+          "type": "warning"
+        },
+        {
+          "timestamp": "11:42:22",
+          "message": "AI fix generation/application failed: ENOENT: no such file or directory, open 'C:\\Users\\j\\Downloads\\autonomous-dev-system\\generated-code\\task-1781159701864\\generated-code\\task-1781159701864\\test.spec.js'",
+          "type": "error"
+        },
+        {
+          "timestamp": "11:42:22",
           "message": "Attempt 1/3 - Healing bug...",
           "type": "warning"
         },
         {
-          "timestamp": "15:00:21",
+          "timestamp": "11:42:22",
           "message": "Requesting AI code generation...",
           "type": "info"
         },
         {
-          "timestamp": "15:04:09",
-          "message": "Fatal Pipeline Error: Gemini API Error: 503 - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+          "timestamp": "11:43:25",
+          "message": "Generated files: server.js, index.html, test.spec.js",
+          "type": "success"
+        },
+        {
+          "timestamp": "11:43:25",
+          "message": "Dispatching tests to Playwright MCP Server...",
+          "type": "info"
+        },
+        {
+          "timestamp": "11:43:56",
+          "message": "Captured failure screenshot: /screenshots/task-1781159701864.png",
+          "type": "warning"
+        },
+        {
+          "timestamp": "11:43:58",
+          "message": "Created Jira Bug: 10172 for investigation",
+          "type": "warning"
+        },
+        {
+          "timestamp": "11:47:54",
+          "message": "AI fix generation/application failed: Gemini API Error: 429 - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 2.796856663s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"model\": \"gemini-2.5-flash\",\n              \"location\": \"global\"\n            },\n            \"quotaValue\": \"20\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"2s\"\n      }\n    ]\n  }\n}\n",
+          "type": "error"
+        },
+        {
+          "timestamp": "11:47:54",
+          "message": "Attempt 2/3 - Healing bug...",
+          "type": "warning"
+        },
+        {
+          "timestamp": "11:47:54",
+          "message": "Requesting AI code generation...",
+          "type": "info"
+        },
+        {
+          "timestamp": "11:51:08",
+          "message": "Fatal Pipeline Error: Gemini API Error: 429 - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 49.093868681s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\n        \"links\": [\n          {\n            \"description\": \"Learn more about Gemini API quotas\",\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\n        \"violations\": [\n          {\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\n            \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\n            \"quotaDimensions\": {\n              \"location\": \"global\",\n              \"model\": \"gemini-2.5-flash\"\n            },\n            \"quotaValue\": \"20\"\n          }\n        ]\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\n        \"retryDelay\": \"49s\"\n      }\n    ]\n  }\n}\n",
           "type": "error"
         }
       ],
       "generatedFiles": [
-        "index.html",
         "server.js",
+        "index.html",
         "test.spec.js"
       ],
-      "retries": 1
+      "screenshotUrl": "/screenshots/task-1781159701864.png",
+      "retries": 2
     }
   ]
 }

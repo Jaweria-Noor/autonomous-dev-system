@@ -23,5 +23,15 @@
     "id": "10129",
     "key": "AUT-18",
     "self": "https://jawerianoorzareen-1754983765925.atlassian.net/rest/api/3/issue/10129"
+  },
+  "Test Failure on Create interactive Todo application (Attempt 1)": {
+    "id": "10171",
+    "key": "AUT-28",
+    "self": "https://jawerianoorzareen-1754983765925.atlassian.net/rest/api/3/issue/10171"
+  },
+  "Test Failure on Create interactive Todo application (Attempt 2)": {
+    "id": "10172",
+    "key": "AUT-29",
+    "self": "https://jawerianoorzareen-1754983765925.atlassian.net/rest/api/3/issue/10172"
   }
 }

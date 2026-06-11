@@ -16,9 +16,11 @@ The files must include:
 2. A "server.js" if needed, or simply static frontend files.
 3. A "test.spec.js" containing Playwright tests to verify the core requirements. The test should navigate to the page and verify key functionality.
 
-Output format must be a raw JSON object with NO markdown wrapping or backticks, like:
+Output format must be a raw JSON object with NO markdown wrapping or backticks.
+All file contents MUST be Base64-encoded to ensure correct transmission of special characters.
+The JSON structure should be:
 {
-  "index.html": "<!DOCTYPE html>...",
-  "test.spec.js": "import { test, expect } from '@playwright/test';..."
+  "index.html": "Base64_STRING",
+  "test.spec.js": "Base64_STRING"
 }
 Ensure it is valid JSON.`;

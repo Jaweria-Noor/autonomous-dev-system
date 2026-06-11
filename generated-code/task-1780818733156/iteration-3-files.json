@@ -1,0 +1,4 @@
+{
+  "index.js": "import express from 'express';\nconst app = express();\napp.use(express.json());\napp.get('/items', (req, res) => res.json([]));\napp.listen(3000, () => console.log('Server running'));",
+  "package.json": "{\n  \"name\": \"fallback-app\",\n  \"version\": \"1.0.0\",\n  \"main\": \"index.js\",\n  \"dependencies\": {\n    \"express\": \"^4.18.2\"\n  }\n}"
+}

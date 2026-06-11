@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Counter</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+            font-weight: 600;
+        }
+
+        #counter-display {
+            font-size: 5em;
+            font-weight: 700;
+            color: #3498db;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        button {
+            background-color: #28a745; /* Green for increment */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            background-color: #218838; /* Darker green on hover */
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            background-color: #1e7e34; /* Even darker on active */
+            transform: translateY(0);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Counter</h1>
+        <div id="counter-display">
+            <span id="counter">0</span>
+        </div>
+        <button id="incrementButton">Increment Counter</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const counterElement = document.getElementById('counter');
+            const incrementButton = document.getElementById('incrementButton');
+            let count = 0;
+
+            function updateCounterDisplay() {
+                counterElement.textContent = count;
+            }
+
+            incrementButton.addEventListener('click', () => {
+                count++;
+                updateCounterDisplay();
+            });
+
+            // Initial display update
+            updateCounterDisplay();
+        });
+    </script>
+</body>
+</html>

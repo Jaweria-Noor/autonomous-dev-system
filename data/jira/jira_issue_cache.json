@@ -1,0 +1,27 @@
+{
+  "Test Failure on Create responsive login page with validation (Attempt 1)": {
+    "id": "10081",
+    "key": "AUT-2",
+    "self": "https://jawerianoorzareen-1754983765925.atlassian.net/rest/api/3/issue/10081"
+  },
+  "Test Failure on Create responsive login page with validation (Attempt 2)": {
+    "id": "10082",
+    "key": "AUT-3",
+    "self": "https://jawerianoorzareen-1754983765925.atlassian.net/rest/api/3/issue/10082"
+  },
+  "Test Failure on Create responsive login page with validation (Attempt 3)": {
+    "id": "10083",
+    "key": "AUT-4",
+    "self": "https://jawerianoorzareen-1754983765925.atlassian.net/rest/api/3/issue/10083"
+  },
+  "Test Failure on Create responsive login page with validation (Attempt 4)": {
+    "id": "10084",
+    "key": "AUT-5",
+    "self": "https://jawerianoorzareen-1754983765925.atlassian.net/rest/api/3/issue/10084"
+  },
+  "Test Failure on Create a simple counter button (Attempt 1)": {
+    "id": "10129",
+    "key": "AUT-18",
+    "self": "https://jawerianoorzareen-1754983765925.atlassian.net/rest/api/3/issue/10129"
+  }
+}

@@ -1,0 +1,1 @@
+import { test, expect } from '@playwright/test'; test('login validation', async ({ page }) => { await page.goto('http://localhost:3001/preview/task-1780400500093/index.html'); await page.click('#submitBtn'); await expect(page.locator('#emailError')).toBeVisible(); });

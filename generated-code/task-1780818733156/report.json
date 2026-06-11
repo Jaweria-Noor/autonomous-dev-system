@@ -1,0 +1,1 @@
+{"success":false,"attempts":4,"errorLogs":"Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.\n\n\n"}

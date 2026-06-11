@@ -1,0 +1,24 @@
+{
+  "name": "autonomous-dev-system",
+  "version": "1.0.0",
+  "description": "AI-Powered Autonomous Software Development Workflow System",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start --prefix backend",
+    "install-all": "npm install && npm install --prefix backend && npm install --prefix frontend",
+    "dev": "concurrently \"npm run start --prefix backend\" \"npm run dev --prefix frontend\"",
+    "playwright": "npx playwright install && npx playwright test",
+    "test": "concurrently \"npm run start --prefix backend\" \"npm run playwright\""
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.5",
+    "express": "^5.2.1",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0"
+  }
+}

@@ -1,0 +1,38 @@
+
+Running 1 test using 1 worker
+
+  x  1 [chromium] › generated-code\task-1780819335295\test.spec.js:3:1 › task manager operations (5.3s)
+
+
+  1) [chromium] › generated-code\task-1780819335295\test.spec.js:3:1 › task manager operations ─────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator: locator('h1')
+    Expected: [32m"Task Manager"[39m
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toHaveText" with timeout 5000ms[22m
+    [2m  - waiting for locator('h1')[22m
+
+
+       6 |
+       7 |   // Verify elements are visible
+    >  8 |   await expect(page.locator('h1')).toHaveText('Task Manager');
+         |                                    ^
+       9 |   const emptyState = page.locator('#emptyState');
+      10 |   await expect(emptyState).toBeVisible();
+      11 |
+        at C:\Users\j\Downloads\Smartvision_Project\autonomous-dev-system\generated-code\task-1780819335295\test.spec.js:8:36
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\task-1780819335295-test-task-manager-operations-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\task-1780819335295-test-task-manager-operations-chromium\error-context.md
+
+  1 failed
+    [chromium] › generated-code\task-1780819335295\test.spec.js:3:1 › task manager operations ──────
+

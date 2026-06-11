@@ -1,0 +1,7 @@
+
+Running 1 test using 1 worker
+
+  ok 1 [chromium] › generated-code\task-verification-test\test.spec.js:3:1 › dummy test (526ms)
+
+  1 passed (2.4s)
+\n

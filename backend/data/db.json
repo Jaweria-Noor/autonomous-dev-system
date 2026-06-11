@@ -1,0 +1,107 @@
+{
+  "tasks": [
+    {
+      "id": "1781085491704",
+      "title": "Create a simple counter button",
+      "description": "A button that increments a counter on click",
+      "priority": "Medium",
+      "category": "Development",
+      "status": "Failed",
+      "createdAt": "2026-06-10T09:58:11.704Z",
+      "_id": "1781085491704",
+      "logs": [
+        {
+          "timestamp": "14:58:11",
+          "message": "Initializing Autonomous Pipeline for Task: \"Create a simple counter button\"",
+          "type": "info"
+        },
+        {
+          "timestamp": "14:58:11",
+          "message": "Generating Requirements Document via AI Engine...",
+          "type": "info"
+        },
+        {
+          "timestamp": "14:58:29",
+          "message": "Generating Architecture Plan...",
+          "type": "info"
+        },
+        {
+          "timestamp": "14:58:57",
+          "message": "Creating Epics and Stories via Jira MCP Server...",
+          "type": "info"
+        },
+        {
+          "timestamp": "14:59:01",
+          "message": "Reusing cached Jira Epic: 10080",
+          "type": "info"
+        },
+        {
+          "timestamp": "14:59:04",
+          "message": "Successfully created Jira Story: 10125",
+          "type": "success"
+        },
+        {
+          "timestamp": "14:59:06",
+          "message": "Successfully created Jira Story: 10126",
+          "type": "success"
+        },
+        {
+          "timestamp": "14:59:08",
+          "message": "Successfully created Jira Story: 10127",
+          "type": "success"
+        },
+        {
+          "timestamp": "14:59:09",
+          "message": "Successfully created Jira Story: 10128",
+          "type": "success"
+        },
+        {
+          "timestamp": "14:59:09",
+          "message": "Requesting AI code generation...",
+          "type": "info"
+        },
+        {
+          "timestamp": "15:00:01",
+          "message": "Generated files: index.html, server.js, test.spec.js",
+          "type": "success"
+        },
+        {
+          "timestamp": "15:00:01",
+          "message": "Dispatching tests to Playwright MCP Server...",
+          "type": "info"
+        },
+        {
+          "timestamp": "15:00:19",
+          "message": "Test failed. Capturing screenshots and traces via MCP...",
+          "type": "error"
+        },
+        {
+          "timestamp": "15:00:21",
+          "message": "Created Jira Bug: 10129 for investigation",
+          "type": "warning"
+        },
+        {
+          "timestamp": "15:00:21",
+          "message": "Attempt 1/3 - Healing bug...",
+          "type": "warning"
+        },
+        {
+          "timestamp": "15:00:21",
+          "message": "Requesting AI code generation...",
+          "type": "info"
+        },
+        {
+          "timestamp": "15:04:09",
+          "message": "Fatal Pipeline Error: Gemini API Error: 503 - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+          "type": "error"
+        }
+      ],
+      "generatedFiles": [
+        "index.html",
+        "server.js",
+        "test.spec.js"
+      ],
+      "retries": 1
+    }
+  ]
+}

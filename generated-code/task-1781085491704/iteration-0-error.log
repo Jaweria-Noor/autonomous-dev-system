@@ -1,0 +1,30 @@
+
+Running 3 tests using 1 worker
+
+Checking for express installation...
+  x  1 [chromium] › generated-code\task-1781085491704\test.spec.js:54:1 › should display initial count as 0 (5ms)
+  -  2 [chromium] › generated-code\task-1781085491704\test.spec.js:59:1 › should increment count on button click
+  -  3 [chromium] › generated-code\task-1781085491704\test.spec.js:67:1 › should increment count multiple times
+
+
+  1) [chromium] › generated-code\task-1781085491704\test.spec.js:54:1 › should display initial count as 0 
+
+    [31m"beforeAll" hook timeout of 10000ms exceeded.[39m
+
+       8 | const BASE_URL = `http://localhost:${PORT}`;
+       9 |
+    > 10 | test.beforeAll(async () => {
+         |      ^
+      11 |   // Ensure express is installed, as it's required by server.js.
+      12 |   // In a real project, 'express' would be a dependency in package.json
+      13 |   // and installed via 'npm install' before running tests.
+        at C:\Users\j\Downloads\Smartvision_Project\autonomous-dev-system\generated-code\task-1781085491704\test.spec.js:10:6
+
+    Error Context: test-results\task-1781085491704-test-should-display-initial-count-as-0-chromium\error-context.md
+
+    Error Context: test-results\task-1781085491704-test-should-display-initial-count-as-0-chromium\error-context.md
+
+  1 failed
+    [chromium] › generated-code\task-1781085491704\test.spec.js:54:1 › should display initial count as 0 
+  2 did not run
+

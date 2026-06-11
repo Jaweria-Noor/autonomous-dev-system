@@ -1,0 +1,102 @@
+{
+  "epics": [
+    {
+      "id": "MOCK-1780400243682",
+      "title": "Test Epic",
+      "description": "Epic Desc",
+      "status": "To Do"
+    },
+    {
+      "id": "MOCK-1780400502693",
+      "title": "[Epic] Full Pipeline Integration Test",
+      "description": "Implement the core requirements for Full Pipeline Integration Test.",
+      "status": "To Do"
+    },
+    {
+      "id": "MOCK-1780754097453",
+      "title": "Test Epic",
+      "description": "Epic Desc",
+      "status": "To Do"
+    }
+  ],
+  "stories": [
+    {
+      "id": "MOCK-1780400243692",
+      "epicId": "MOCK-1780400243682",
+      "title": "Test Story",
+      "description": "Story Desc",
+      "status": "To Do"
+    },
+    {
+      "id": "MOCK-1780400502701",
+      "epicId": "MOCK-1780400502693",
+      "title": "[Story] UI Implementation for Full Pipeline Integration Test",
+      "description": "Create the frontend index.html based on Build a login page with full validation for email and password.",
+      "status": "To Do"
+    },
+    {
+      "id": "MOCK-1780400502709",
+      "epicId": "MOCK-1780400502693",
+      "title": "[Story] Test Implementation for Full Pipeline Integration Test",
+      "description": "Create the Playwright test.spec.js",
+      "status": "To Do"
+    },
+    {
+      "id": "MOCK-1780754097459",
+      "epicId": "MOCK-1780754097453",
+      "title": "Test Story",
+      "description": "Story Desc",
+      "status": "To Do"
+    }
+  ],
+  "bugs": [
+    {
+      "id": "MOCK-1780400243697",
+      "storyId": "MOCK-1780400243692",
+      "title": "Test Bug",
+      "description": "Bug Desc",
+      "traceUrl": "n/a",
+      "status": "Open"
+    },
+    {
+      "id": "MOCK-1780400515126",
+      "storyId": "MOCK-1780400502693",
+      "title": "Test Failure on Full Pipeline Integration Test",
+      "description": "Logs:\\n\nRunning 1 test using 1 worker\n\n  x  1 [chromium] › generated-code\\task-1780400500093\\test.spec.js:1:50 › login validation (2.8s)\n\n\n  1) [chromium] › generated-code\\task-1780400500093\\test.spec.js:1:50 › login validation ───────────\n\n    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3001/preview/task-1780400500093/index.html\n    Call log:\n    \u001b[2m  - navigating to \"http://localhost:3001/preview/task-1780400500093/index.html\", waiting until \"load\"\u001b[22m\n\n\n    > 1 | import { tes",
+      "traceUrl": "Traces are not explicitly handled in this mock yet, but would be downloaded here.",
+      "status": "Open"
+    },
+    {
+      "id": "MOCK-1780400524124",
+      "storyId": "MOCK-1780400502693",
+      "title": "Test Failure on Full Pipeline Integration Test",
+      "description": "Logs:\\n\nRunning 1 test using 1 worker\n\n  x  1 [chromium] › generated-code\\task-1780400500093\\test.spec.js:1:50 › login validation (2.7s)\n\n\n  1) [chromium] › generated-code\\task-1780400500093\\test.spec.js:1:50 › login validation ───────────\n\n    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3001/preview/task-1780400500093/index.html\n    Call log:\n    \u001b[2m  - navigating to \"http://localhost:3001/preview/task-1780400500093/index.html\", waiting until \"load\"\u001b[22m\n\n\n    > 1 | import { tes",
+      "traceUrl": "Traces are not explicitly handled in this mock yet, but would be downloaded here.",
+      "status": "Open"
+    },
+    {
+      "id": "MOCK-1780400533483",
+      "storyId": "MOCK-1780400502693",
+      "title": "Test Failure on Full Pipeline Integration Test",
+      "description": "Logs:\\n\nRunning 1 test using 1 worker\n\n  x  1 [chromium] › generated-code\\task-1780400500093\\test.spec.js:1:50 › login validation (2.7s)\n\n\n  1) [chromium] › generated-code\\task-1780400500093\\test.spec.js:1:50 › login validation ───────────\n\n    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3001/preview/task-1780400500093/index.html\n    Call log:\n    \u001b[2m  - navigating to \"http://localhost:3001/preview/task-1780400500093/index.html\", waiting until \"load\"\u001b[22m\n\n\n    > 1 | import { tes",
+      "traceUrl": "Traces are not explicitly handled in this mock yet, but would be downloaded here.",
+      "status": "Open"
+    },
+    {
+      "id": "MOCK-1780400543727",
+      "storyId": "MOCK-1780400502693",
+      "title": "Test Failure on Full Pipeline Integration Test",
+      "description": "Logs:\\n\nRunning 1 test using 1 worker\n\n  x  1 [chromium] › generated-code\\task-1780400500093\\test.spec.js:1:50 › login validation (2.8s)\n\n\n  1) [chromium] › generated-code\\task-1780400500093\\test.spec.js:1:50 › login validation ───────────\n\n    Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3001/preview/task-1780400500093/index.html\n    Call log:\n    \u001b[2m  - navigating to \"http://localhost:3001/preview/task-1780400500093/index.html\", waiting until \"load\"\u001b[22m\n\n\n    > 1 | import { tes",
+      "traceUrl": "Traces are not explicitly handled in this mock yet, but would be downloaded here.",
+      "status": "Open"
+    },
+    {
+      "id": "MOCK-1780754097462",
+      "storyId": "MOCK-1780754097459",
+      "title": "Test Bug",
+      "description": "Bug Desc",
+      "traceUrl": "n/a",
+      "status": "Open"
+    }
+  ]
+}

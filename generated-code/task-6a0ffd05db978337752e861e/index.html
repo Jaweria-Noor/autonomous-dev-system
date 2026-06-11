@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Portal Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background: radial-gradient(circle at center, #2e1065, #090514); }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center text-white font-sans">
+    <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 w-full max-w-md shadow-2xl">
+        <h2 class="text-3xl font-bold mb-6 text-center bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">Quantum Auth</h2>
+        
+        <form id="loginForm" class="space-y-4" onsubmit="return false;">
+            <div>
+                <label class="block text-sm font-medium text-purple-200 mb-1">Email Address</label>
+                <input type="text" id="emailInput" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-purple-500 transition-colors" placeholder="user@company.com">
+                <p id="emailError" class="text-red-400 text-xs mt-1 hidden">Please enter a valid email address.</p>
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-purple-200 mb-1">Password</label>
+                <input type="password" id="passwordInput" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white focus:outline-none focus:border-purple-500 transition-colors" placeholder="••••••••">
+                <p id="passwordError" class="text-red-400 text-xs mt-1 hidden">Password must be at least 6 characters.</p>
+            </div>
+            <button type="submit" id="submitBtn" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 font-semibold py-2.5 rounded-lg shadow-lg hover:shadow-purple-500/20 transition-all transform hover:-translate-y-0.5">
+                Sign In
+            </button>
+        </form>
+    </div>
+    
+    <script>
+        // HEALED CODE: Full regex validation for email and length check for password
+        document.getElementById('submitBtn').addEventListener('click', () => {
+            const email = document.getElementById('emailInput').value;
+            const password = document.getElementById('passwordInput').value;
+            
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            let isValid = true;
+
+            if (!emailRegex.test(email)) {
+                document.getElementById('emailError').classList.remove('hidden');
+                isValid = false;
+            } else {
+                document.getElementById('emailError').classList.add('hidden');
+            }
+            
+            if (password.length < 6) {
+                document.getElementById('passwordError').classList.remove('hidden');
+                isValid = false;
+            } else {
+                document.getElementById('passwordError').classList.add('hidden');
+            }
+
+            if (isValid) {
+                alert("Login successful!");
+            }
+        });
+    </script>
+</body>
+</html>

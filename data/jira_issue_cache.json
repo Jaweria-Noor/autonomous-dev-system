@@ -1,0 +1,17 @@
+{
+  "epic": "10080",
+  "stories": {
+    "Task Creation and Listing": "10085",
+    "Task Lifecycle Management": "10086",
+    "Design and implement responsive dark-themed login page UI": "10119",
+    "Implement email input field with basic functionality": "10120",
+    "Implement password input field with masked entry": "10121",
+    "Implement email format validation": "10122",
+    "Implement password minimum length validation": "10123",
+    "Implement login button and form submission": "10124",
+    "Display Initial Counter Value": "10125",
+    "Render Counter Increment Button": "10126",
+    "Increment Counter on Button Click": "10127",
+    "Update Displayed Counter Value": "10128"
+  }
+}

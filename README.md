@@ -208,7 +208,7 @@ Responsible for:
 ### Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/autonomous-dev-system.git
+git clone https://github.com/Jaweria-Noor/autonomous-dev-system.git
 cd autonomous-dev-system
 ```
 
